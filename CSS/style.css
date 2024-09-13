@@ -1,0 +1,141 @@
+:root{
+    --primary-color: #c2b098;
+    --secondray-color: #f1efe885;
+    --primary-25: rgba(194, 176, 152, 0.25);
+    --primary-50 : #c2b09881;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.amiri-regular {
+    font-family: "Amiri", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.amiri-bold {
+    font-family: "Amiri", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Amiri', sans-serif;
+    text-align: right;
+    direction: rtl;
+}
+.bg-main {
+    background-color: var(--primary-color);
+}
+.bg-main-50 {
+    background-color: var(--primary-50);
+}
+.bg-main-25 {
+    background-color: var(--primary-25);
+}
+.bg-second{
+    background-color: var(--secondray-color);
+}
+.btn-main, .btn-main:hover, .btn-main:focus, .btn-outline-main:hover{
+    background-color: var(--primary-50) ;
+    color: #000;
+    border-color: var(--primary-50) ;
+}
+.btn-outline-main {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.details .col-lg-2 {
+    width: 13.333333%;
+}
+/* courses */
+.img-cont{
+    width: 450px;
+    height: 300px;
+}
+.text-cont,
+.img-cont {
+    display: flex;
+    align-items: center;
+}
+
+.text-cont {
+    height: 100%;
+}
+.sfont{
+font-family: "Noto Naskh Arabic", serif;   
+ /* font-size: 18px; */
+}
+
+/* about */
+/* h1,
+h2 {
+    text-align: center;
+    color: #2c3e50;
+} */
+
+article {
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+blockquote {
+    border-right: 3px solid #000;
+    padding-right: 10px;
+    color: #000;
+}
+
+/* title */
+
+.title h3 {
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.title h3::before,
+.title h3::after {
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    content: "";
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.title h3::before {
+    left: -70px;
+}
+.title h3::after {
+    right: -70px;
+}
+
+.title span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title span::before,
+.title span::after {
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    content: "";
+    top: 45%;
+    transform: translateY(-50%);
+}
+
+.title span::before {
+    left: -60px;
+}
+.title span::after {
+    right: -60px;
+}
